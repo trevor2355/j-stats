@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1585711833068" clover="3.2.0">
-  <project timestamp="1585711833068" name="All files">
-    <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="5" coveredelements="5" complexity="0" loc="3" ncloc="3" packages="1" files="1" classes="1"/>
+<coverage generated="1585757739826" clover="3.2.0">
+  <project timestamp="1585757739826" name="All files">
+    <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7" elements="19" coveredelements="19" complexity="0" loc="12" ncloc="12" packages="1" files="5" classes="5"/>
     <file name="App.jsx" path="/Users/trevorbell/Desktop/Jazz App/j-stats/client/src/components/App.jsx">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <line num="5" count="1" type="stmt"/>
-      <line num="7" count="1" type="stmt"/>
-      <line num="13" count="1" type="stmt"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="10" count="2" type="stmt"/>
+      <line num="16" count="2" type="stmt"/>
+    </file>
+    <file name="NavBar.jsx" path="/Users/trevorbell/Desktop/Jazz App/j-stats/client/src/components/NavBar.jsx">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="3" count="3" type="stmt"/>
+      <line num="4" count="2" type="stmt"/>
+    </file>
+    <file name="PlayerInfo.jsx" path="/Users/trevorbell/Desktop/Jazz App/j-stats/client/src/components/PlayerInfo.jsx">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="3" count="3" type="stmt"/>
+      <line num="4" count="2" type="stmt"/>
+    </file>
+    <file name="Stats.jsx" path="/Users/trevorbell/Desktop/Jazz App/j-stats/client/src/components/Stats.jsx">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="14" count="2" type="stmt"/>
+    </file>
+    <file name="StatsGraph.jsx" path="/Users/trevorbell/Desktop/Jazz App/j-stats/client/src/components/StatsGraph.jsx">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="3" count="4" type="stmt"/>
+      <line num="4" count="2" type="stmt"/>
     </file>
   </project>
 </coverage>

@@ -1,4 +1,7 @@
 import React from 'react';
+import NavBar from './NavBar.jsx';
+import PlayerInfo from './PlayerInfo.jsx';
+import Stats from './Stats.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -11,7 +14,15 @@ class App extends React.Component {
 
   render() {
     return (
-      <h1>Jazz stats</h1>
+      <div>
+        <h1>Jazz stats</h1>
+        <NavBar />
+        <div className='grid-container'>
+          <PlayerInfo />
+          <Stats />
+        </div>
+      </div>
+      
     )
   }
 }
