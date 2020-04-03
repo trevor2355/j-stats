@@ -20,8 +20,10 @@
   },
   "homepage": "https://github.com/trevor2355/j-stats#readme",
   "dependencies": {
+    "axios": "^0.19.2",
     "express": "^4.17.1",
     "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
     "path": "^0.12.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
