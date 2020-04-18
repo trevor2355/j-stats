@@ -1,5 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
+const playersRoutes = require('./routes/players.js');
+const statsRoutes = require('./routes/stats.js');
 const PORT = 3010;
 
 const app = express();
@@ -15,3 +17,5 @@ app.listen(PORT, () => {
 });
 
 //handle the routes here
+app.use('/players', playersRoutes);
+app.use('/stats', statsRoutes)

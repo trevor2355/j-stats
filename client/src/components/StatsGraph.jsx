@@ -1,8 +1,12 @@
 import React from 'react';
+import Chart from 'chart.js';
 
 const StatsGraph = props => {
   return (
-    <h4>Stats Graph</h4>
+    <div className='stats-container'>
+      <canvas id='myChart'></canvas>
+    </div>
+
   )
 }
 

@@ -1,6 +1,6 @@
 body {
   background-image: url('./Throwback.png');
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: white;
 }
 
@@ -34,15 +34,43 @@ body {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 4px 26px;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.NavBarItems:hover {
+  opacity: 0.7;
+}
+
+.player-selector-container {
+  background-color: rgb(90, 39, 151);
+  position: absolute;
+  z-index: 2;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.player-name-selection {
+  opacity: 0.99;
+  width: 190px;
+  list-style-type: none;
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.player-name-selection:hover {
+  background-color: rgb(78, 78, 78);
+  cursor: pointer;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 22% 78%;
   grid-template-rows: 35em;
-
+  position: relative;
+  top: 0;
+  right: 0;
 }
 
 .grid-item {
@@ -55,20 +83,22 @@ body {
 .grid-item img {
   width: 100%;
   max-width: 350px;
+  max-height: 400px;
 }
 
 .playerOverview {
-  background-color: rgb(10, 0, 24);
-  box-shadow: 3px 1px 10px rgb(32, 4, 71);
+  background-color: rgb(10, 0, 24, 0.4);
+  box-shadow: 3px 1px 10px rgb(32, 4, 71), 0.4;
   margin-top: 5px;
   margin-bottom: 20px;
   padding: 10px;
   border-radius: 3px;
+  font-weight: 900;
 }
 
 .playerBasics {
-  background-color: rgb(10, 0, 24);
-  box-shadow: 3px 1px 10px rgb(32, 4, 71);
+  background-color: rgb(10, 0, 24, 0.4);
+  box-shadow: 3px 1px 10px rgb(32, 4, 71), 0.4;
   margin-top: 20px;
   margin-bottom: 15px;
   padding: 10px;
@@ -86,6 +116,45 @@ body {
 
 .keyPlayerBasic {
   text-align: right;
-  width: 85px;
+  width: 90px;
   display: inline-block;
+}
+
+.J {
+  display: block;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stats-container {
+  padding: 20px;
+}
+
+.stats-selction-bar {
+  width: 100%;
+}
+
+.stat-tab {
+  background-color: rgb(10, 0, 24, 0.4);
+  font-size: 18px;
+  padding: 6px;
+  border: 2px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.selected-stat {
+  font-size: 18px;
+  padding: 6px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.stat-tab:hover{
+  opacity: .7;
+  cursor: pointer;
 }
