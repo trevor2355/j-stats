@@ -35,9 +35,11 @@ class Stats extends React.Component {
     }
     this.changeStat = this.changeStat.bind(this);
   }
+  
+  componentDidMount() {
+  }
 
   componentDidUpdate() {
-    console.log('PLAYER STATS: ', this.props.playerStats)
     var seasonsArray = this.props.playerStats.map(season => {
       return season.seasonYear;
     })
@@ -47,7 +49,10 @@ class Stats extends React.Component {
       return season[this.state.selectedStat];
     })
     statArray = statArray.reverse();
+    this.buildChart(seasonsArray, statArray);
+  }
 
+  buildChart(seasonsArray, statArray) {
     var ctx = document.getElementById('myChart').getContext('2d');
     var lineChart = new Chart(ctx, {
       type: 'line',
@@ -55,8 +60,8 @@ class Stats extends React.Component {
         labels: seasonsArray,
         datasets: [{
           label: this.state.label[this.state.selectedStat],
-          backgroundColor: 'rgb(117,59,189)',
-          // borderColor: 'rgb(0, 169, 224, 0.2)',
+          backgroundColor: this.props.backgroundColor,
+          borderColor: this.props.borderColor,
           data: statArray
         }]
       },
@@ -73,19 +78,18 @@ class Stats extends React.Component {
     })
   }
 
+
   changeStat(newStat) {
     this.setState({
       selectedStat: newStat
     })
   }
 
-
-
   render() {
     return (
-      <div className='grid-item'>
-        <StatsGraph />
-        <StatsSelectionBar selectedStat={this.state.selectedStat} changeStat={this.changeStat}/>
+      <div className={'grid-item' + this.props.theme, 'stats-container'}>
+        <StatsGraph selectedStat={this.state.selectedStat} theme={this.props.theme}/>
+        <StatsSelectionBar selectedStat={this.state.selectedStat} changeStat={this.changeStat} theme={this.props.theme}/>
       </div>
     )
   }

@@ -15,17 +15,17 @@ class Stats extends React.Component {
 
   render() {
     return (
-      <div className='stats-selction-bar'>
-        <span id='ppg' className={this.props.selectedStat === 'ppg' ? 'selected-stat': 'stat-tab'} onClick={this.handleStatChange}>Points</span>
-        <span id ='rpg' className={this.props.selectedStat === 'rpg' ? 'selected-stat': 'stat-tab'} onClick={this.handleStatChange}>Rebounds</span>
-        <span id='apg'className={this.props.selectedStat === 'apg' ? 'selected-stat': 'stat-tab'} onClick={this.handleStatChange}>Assists</span>
-        <span id='spg'className={this.props.selectedStat === 'spg' ? 'selected-stat': 'stat-tab'} onClick={this.handleStatChange}>Steals</span>
-        <span id='topg'className={this.props.selectedStat === 'topg' ? 'selected-stat': 'stat-tab'} onClick={this.handleStatChange}>Turn-Overs</span>
-        <span id='bpg'className={this.props.selectedStat === 'bpg' ? 'selected-stat': 'stat-tab'} onClick={this.handleStatChange}>Blocks</span>
-        <span id='mpg'className={this.props.selectedStat === 'mpg' ? 'selected-stat': 'stat-tab'} onClick={this.handleStatChange}>Minutes</span>
-        <span id='tpp'className={this.props.selectedStat === 'tpp' ? 'selected-stat': 'stat-tab'} onClick={this.handleStatChange}>3P%</span>
-        <span id='ftp'className={this.props.selectedStat === 'ftp' ? 'selected-stat': 'stat-tab'} onClick={this.handleStatChange}>FT%</span>
-        <span id='fgp'className={this.props.selectedStat === 'fgp' ? 'selected-stat': 'stat-tab'} onClick={this.handleStatChange}>FG%</span>
+      <div className={'stats-selction-bar' + this.props.theme}>
+        <div id='ppg' className={this.props.selectedStat === 'ppg' ? 'selected-stat' + this.props.theme: 'stat-tab' + this.props.theme} onClick={this.handleStatChange}>Points</div>
+        <div id ='rpg' className={this.props.selectedStat === 'rpg' ? 'selected-stat' + this.props.theme: 'stat-tab' + this.props.theme} onClick={this.handleStatChange}>Rebounds</div>
+        <div id='apg'className={this.props.selectedStat === 'apg' ? 'selected-stat' + this.props.theme: 'stat-tab' + this.props.theme} onClick={this.handleStatChange}>Assists</div>
+        <div id='spg'className={this.props.selectedStat === 'spg' ? 'selected-stat' + this.props.theme: 'stat-tab' + this.props.theme} onClick={this.handleStatChange}>Steals</div>
+        <div id='topg'className={this.props.selectedStat === 'topg' ? 'selected-stat' + this.props.theme: 'stat-tab' + this.props.theme} onClick={this.handleStatChange}>Turn-Overs</div>
+        <div id='bpg'className={this.props.selectedStat === 'bpg' ? 'selected-stat' + this.props.theme: 'stat-tab' + this.props.theme} onClick={this.handleStatChange}>Blocks</div>
+        <div id='mpg'className={this.props.selectedStat === 'mpg' ? 'selected-stat' + this.props.theme: 'stat-tab' + this.props.theme} onClick={this.handleStatChange}>Minutes</div>
+        <div id='tpp'className={this.props.selectedStat === 'tpp' ? 'selected-stat' + this.props.theme: 'stat-tab' + this.props.theme} onClick={this.handleStatChange}>3P%</div>
+        <div id='ftp'className={this.props.selectedStat === 'ftp' ? 'selected-stat' + this.props.theme: 'stat-tab' + this.props.theme} onClick={this.handleStatChange}>FT%</div>
+        <div id='fgp'className={this.props.selectedStat === 'fgp' ? 'selected-stat' + this.props.theme: 'stat-tab' + this.props.theme} onClick={this.handleStatChange}>FG%</div>
       </div>
     )
   }

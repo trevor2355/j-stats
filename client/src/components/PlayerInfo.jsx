@@ -8,33 +8,33 @@ const PlayerInfo = props => {
     var lastNameLower = props.player.lastName.toLowerCase()
     }
   }
-  var playerImage = `./cut-outs/${lastNameLower || ''}-cutout.png`;
+  var playerImage = `./cut-outs/${lastNameLower || ''}${props.theme}-cutout.png`;
   return (
-    <div className='grid-item'>
-      <div className='playerOverview'>
+    <div className={'grid-item' + props.theme}>
+      <div className={'playerOverview' + props.theme}>
         <div>{props.player.firstName} {props.player.lastName}</div>
       </div>
       <img src={playerImage} ></img>
-      <div className='playerBasics'>
+      <div className={'playerBasics' + props.theme}>
         <div>
-          <div className='keyPlayerBasic'>Number:</div>
-          <div className='value'>{props.player.jersey}</div>
+          <div className={'keyPlayerBasic' + props.theme}>Number:</div>
+          <div className={'value' + props.theme}>{props.player.jersey}</div>
         </div>
         <div>
-          <div className='keyPlayerBasic'>Position:</div>
-          <div className='value'>{props.player.pos}</div>
+          <div className={'keyPlayerBasic' + props.theme}>Position:</div>
+          <div className={'value' + props.theme}>{props.player.pos}</div>
         </div>
         <div>
-          <div className='keyPlayerBasic'>Height:</div>
-          <div className='value'>{props.player.heightFeet}'{props.player.heightInches}</div>
+          <div className={'keyPlayerBasic' + props.theme}>Height:</div>
+          <div className={'value' + props.theme}>{props.player.heightFeet}'{props.player.heightInches}</div>
         </div>
         <div>
-          <div className='keyPlayerBasic'>Weight:</div>
-          <div className='value'>{props.player.weightPounds}</div>
+          <div className={'keyPlayerBasic' + props.theme}>Weight:</div>
+          <div className={'value' + props.theme}>{props.player.weightPounds}</div>
         </div>
         <div>
-          <div className='keyPlayerBasic'>Years Pro:</div>
-          <div className='value'>{props.player.yearsPro}</div>
+          <div className={'keyPlayerBasic' + props.theme}>Years Pro:</div>
+          <div className={'value' + props.theme}>{props.player.yearsPro}</div>
         </div>
       </div>
     </div>

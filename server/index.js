@@ -18,4 +18,4 @@ app.listen(PORT, () => {
 
 //handle the routes here
 app.use('/players', playersRoutes);
-app.use('/stats', statsRoutes)
+app.use('/stats', statsRoutes);

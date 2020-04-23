@@ -10,9 +10,13 @@ class App extends React.Component {
     this.state = {
       players: [],
       displayedPlayer: {},
-      playerStats: []
+      playerStats: [],
+      theme: '-desert',
+      backgroundColor: '#921f1e',
+      borderColor: '#921f1e'
     }
     this.displayPlayer = this.displayPlayer.bind(this);
+    this.themeChange = this.themeChange.bind(this);
   }
 
   componentDidMount() {
@@ -29,6 +33,9 @@ class App extends React.Component {
           players
         }, () => this.displayRandom())
       })
+      .catch(err => {
+        console.log(err);
+      })
   }
 
   getPlayerStats(personId) {
@@ -39,7 +46,10 @@ class App extends React.Component {
       .then(playerStats => {
         this.setState({
           playerStats
-        }, () => console.log(this.state.playerStats))
+        })
+      })
+      .catch(err => {
+        console.log(err);
       })
   }
 
@@ -62,15 +72,43 @@ class App extends React.Component {
     }
   }
 
+  themeChange() {
+    if (this.state.theme === '-purple') {
+      var newTheme = '-desert'
+    } else {
+      var newTheme = '-purple'
+    }
+    this.setState({
+      theme: newTheme
+    }, () => this.setGraphcolor())
+  }
+
+  setGraphcolor() {
+    var backgroundColor;
+    var borderColor;
+    if (this.state.theme === '-purple') {
+      console.log('purple')
+      backgroundColor = 'rgb(117, 59, 189)',
+      borderColor = 'rgb(0, 98, 114)';
+    } else {
+      backgroundColor = '#921f1e',
+      borderColor = 'rgb(64, 32, 34)'
+    }
+    this.setState({
+      backgroundColor,
+      borderColor
+    })
+  }
+
   render() {
     return (
-      <div>
-        <img className ='J' src="mountainJ.png"></img>
-        <NavBar players={this.state.players} displayPlayer={this.displayPlayer}/>
-        <div id='absolute-grid-container'>
-          <div className='grid-container'>
-            <PlayerInfo player={this.state.displayedPlayer} />
-            <Stats playerStats={this.state.playerStats}/>
+      <div className={'background-img' + this.state.theme}>
+        <img className={'J' + this.state.theme} src={'logo' + this.state.theme + ".png"} onClick={this.themeChange}></img>
+        <NavBar players={this.state.players} displayPlayer={this.displayPlayer} theme={this.state.theme}/>
+        <div id={'absolute-grid-container' + this.state.theme}>
+          <div className={'grid-container' + this.state.theme} >
+            <PlayerInfo player={this.state.displayedPlayer} theme={this.state.theme}/>
+            <Stats playerStats={this.state.playerStats} theme={this.state.theme} backgroundColor={this.state.backgroundColor} borderColor={this.state.borderColor}/>
           </div>
         </div>
       </div>

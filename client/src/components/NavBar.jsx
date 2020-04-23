@@ -40,10 +40,10 @@ class NavBar extends React.Component {
     var playerList
     if (this.state.displayPlayers === true) {
       playerList = (
-        <div className='player-selector-container'>
+        <div className={'player-selector-container' + this.props.theme}>
           {this.props.players.map(player => {
             return (
-              <li className='player-name-selection' value={player.personId} key={player.id} onClick={this.handlePlayerSelection}>{player.firstName} {player.lastName}</li>
+              <li className={'player-name-selection' + this.props.theme} value={player.personId} key={player.id} onClick={this.handlePlayerSelection}>{player.firstName} {player.lastName}</li>
             )
           })}
         </div>
@@ -51,8 +51,8 @@ class NavBar extends React.Component {
     }
     return (
       <div>
-        <ul className='NavBar'>
-          <li className='NavBarItems' onClick={this.togglePlayerList}>{this.state.playersDropDownText}</li>
+        <ul className={'NavBar' + this.props.theme}>
+          <li className={'NavBarItems' + this.props.theme} onClick={this.togglePlayerList}>{this.state.playersDropDownText}</li>
         </ul>
         {playerList}
       </div>
