@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "node server/index.js",
-    // "webpack": "webpack -d --watch",
+    "webpack": "webpack -d --watch",
     "test": "jest",
     "schema": "mysql -u root -p < server/db/schema.sql"
   },
