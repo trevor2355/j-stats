@@ -83,4 +83,4 @@ I deployed this project using Docker and AWS.
 * AWS (Deployment)
 
 ## License
-MIT license [here](https://github.com/There-By-The-Sea/reservation-form/blob/master/LICENSE)
+MIT license [here](https://github.com/trevor2355/j-stats/blob/master/LICENSE)
