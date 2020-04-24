@@ -4,7 +4,7 @@ This is a node.js application, that relies on chart.js to allow the user to see 
 ## Getting Started
 
 ### Prerequisites
-A couple of things that you will need installed on your machine (check out their documentaion for installation instuctions)
+A couple of things that you will need installed on your machine (check out their documentaion for installation instuctions).
 
 1. [Mysql](https://dev.mysql.com/downloads/mysql/)
 
