@@ -178,3 +178,193 @@
   opacity: .7;
   cursor: pointer;
 }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+}
+
+#app {
+  margin: 0px;
+}
+
+.background-purple {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.1;
+}
+
+.background-img-purple {
+  background-image: url('./Throwback.png');
+  height: 900px;
+}
+
+.favStar-purple {
+  color: rgba(255, 255, 255);
+}
+
+.favStar-purple:hover {
+  color: rgba(255, 255, 255);
+  cursor: pointer;
+}
+
+.NavBar-purple {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(90, 39, 151);
+  border-radius: 4px;
+  box-shadow: 3px 1px 10px rgb(135, 92, 187);
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+.NavBarItems-purple {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 4px 26px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.NavBarItems-purple:hover {
+  opacity: 0.7;
+}
+
+.player-selector-container-purple {
+  background-color: rgb(90, 39, 151);
+  position: absolute;
+  z-index: 2;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+}
+
+.player-name-selection-purple {
+  opacity: 0.99;
+  width: 190px;
+  list-style-type: none;
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.player-name-selection-purple:hover {
+  background-color: rgb(78, 78, 78);
+  cursor: pointer;
+}
+
+.grid-container-purple {
+  display: grid;
+  grid-template-columns: 22% 78%;
+  grid-template-rows: 35em;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.grid-item-purple {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 8px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-item-purple img {
+  width: 100%;
+  max-width: 350px;
+  max-height: 400px;
+}
+
+.playerOverview-purple {
+  background-color: rgb(10, 0, 24, 0.4);
+  box-shadow: 3px 1px 10px rgb(32, 4, 71), 0.4;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 3px;
+  font-weight: 900;
+}
+
+.playerBasics-purple {
+  background-color: rgb(10, 0, 24, 0.4);
+  box-shadow: 3px 1px 10px rgb(32, 4, 71), 0.4;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+.value-purple {
+  text-align: center;
+  width: 85px;
+  display: inline-block;
+  padding-top: 3px;
+  font-weight: 700;
+}
+
+.keyPlayerBasic-purple {
+  text-align: right;
+  width: 90px;
+  display: inline-block;
+}
+
+.J-purple {
+  display: block;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.stats-container-purple {
+  padding: 20px;
+  background-color: rgb(255, 255, 255, .9);
+  margin-left: 1px;
+  margin-right: 1px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+.stats-selction-bar-purple {
+  width: 100%;
+  display: flex;
+}
+
+.stat-tab-purple {
+  background-color: rgba(10, 0, 24, 0.4);
+  font-size: 18px;
+  padding: 6px;
+  border: 2px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  flex-grow: 1;
+  color: white;
+}
+
+.selected-stat-purple {
+  font-size: 18px;
+  padding: 6px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  flex-grow: 1;
+  background-color: rgb(255, 255, 255, .9);
+  color: black;
+}
+
+.stat-tab-purple:hover {
+  opacity: .7;
+  cursor: pointer;
+}
