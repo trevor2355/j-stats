@@ -87,7 +87,6 @@ class App extends React.Component {
     var backgroundColor;
     var borderColor;
     if (this.state.theme === '-purple') {
-      console.log('purple')
       backgroundColor = 'rgb(117, 59, 189)',
       borderColor = 'rgb(0, 98, 114)';
     } else {
@@ -103,7 +102,7 @@ class App extends React.Component {
   render() {
     return (
       <div className={'background-img' + this.state.theme}>
-        <img className={'J' + this.state.theme} src={'logo' + this.state.theme + ".png"} onClick={this.themeChange}></img>
+        <img className={'J' + this.state.theme} src={'https://j-stats.s3-us-west-1.amazonaws.com/logo' + this.state.theme + ".png"} onClick={this.themeChange}></img>
         <NavBar players={this.state.players} displayPlayer={this.displayPlayer} theme={this.state.theme}/>
         <div id={'absolute-grid-container' + this.state.theme}>
           <div className={'grid-container' + this.state.theme} >

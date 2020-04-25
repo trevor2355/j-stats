@@ -8,7 +8,7 @@
 }
 
 .background-img-desert {
-  background-image: url('./desert2.png');
+  background-image: url('https://j-stats.s3-us-west-1.amazonaws.com/desert2.png');
   background-size: 1500px 900px;
   height: 900px;
 }
@@ -179,6 +179,15 @@
   cursor: pointer;
 }
 
+
+
+
+/* UNDERNEATH HERE ARE ALL OF THE MOUNTAIN STYLING  */
+
+
+
+
+
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0px;
@@ -198,7 +207,7 @@ body {
 }
 
 .background-img-purple {
-  background-image: url('./Throwback.png');
+  background-image: url('https://j-stats.s3-us-west-1.amazonaws.com/Throwback.png');
   height: 900px;
 }
 
