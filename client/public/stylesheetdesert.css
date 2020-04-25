@@ -68,6 +68,10 @@
   cursor: pointer;
 }
 
+#absoulte-grid-container-desert {
+  justify-content: center;
+}
+
 .grid-container-desert {
   display: grid;
   grid-template-columns: 22% 78%;
@@ -271,6 +275,10 @@ body {
 .player-name-selection-purple:hover {
   background-color: rgb(78, 78, 78);
   cursor: pointer;
+}
+
+#absoulte-grid-container-desert {
+  justify-content: center;
 }
 
 .grid-container-purple {
