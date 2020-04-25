@@ -9,8 +9,8 @@
 
 .background-img-desert {
   background-image: url('https://j-stats.s3-us-west-1.amazonaws.com/desert2.png');
-  background-size: 1500px 900px;
-  height: 900px;
+  background-size: 100% 1350px;
+  height: 1349px;
 }
 
 .favStar-desert {
@@ -75,6 +75,7 @@
   position: relative;
   top: 0;
   right: 0;
+  max-width: 2500px;
 }
 
 .grid-item-desert {
@@ -208,7 +209,8 @@ body {
 
 .background-img-purple {
   background-image: url('https://j-stats.s3-us-west-1.amazonaws.com/Throwback.png');
-  height: 900px;
+  background-size: auto;
+  height: 1350px;
 }
 
 .favStar-purple {
@@ -278,6 +280,7 @@ body {
   position: relative;
   top: 0;
   right: 0;
+  max-width: 2500px;
 }
 
 .grid-item-purple {
