@@ -68,7 +68,7 @@
   cursor: pointer;
 }
 
-#absoulte-grid-container-desert {
+.absoulte-grid-container-desert {
   justify-content: center;
 }
 
@@ -277,7 +277,7 @@ body {
   cursor: pointer;
 }
 
-#absoulte-grid-container-desert {
+.absoulte-grid-container-desert {
   justify-content: center;
 }
 

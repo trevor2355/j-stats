@@ -104,7 +104,7 @@ class App extends React.Component {
       <div className={'background-img' + this.state.theme}>
         <img className={'J' + this.state.theme} src={'https://j-stats.s3-us-west-1.amazonaws.com/logo' + this.state.theme + ".png"} onClick={this.themeChange}></img>
         <NavBar players={this.state.players} displayPlayer={this.displayPlayer} theme={this.state.theme}/>
-        <div id={'absolute-grid-container' + this.state.theme}>
+        <div className={'absolute-grid-container' + this.state.theme}>
           <div className={'grid-container' + this.state.theme} >
             <PlayerInfo player={this.state.displayedPlayer} theme={this.state.theme}/>
             <Stats playerStats={this.state.playerStats} theme={this.state.theme} backgroundColor={this.state.backgroundColor} borderColor={this.state.borderColor}/>
