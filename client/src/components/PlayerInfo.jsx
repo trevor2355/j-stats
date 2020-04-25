@@ -8,7 +8,7 @@ const PlayerInfo = props => {
     var lastNameLower = props.player.lastName.toLowerCase()
     }
   }
-  var playerImage = `./cut-outs/${lastNameLower || ''}${props.theme}-cutout.png`;
+  var playerImage = `https://j-stats.s3-us-west-1.amazonaws.com/${lastNameLower || ''}${props.theme}-cutout.png`;
   return (
     <div className={'grid-item' + props.theme}>
       <div className={'playerOverview' + props.theme}>

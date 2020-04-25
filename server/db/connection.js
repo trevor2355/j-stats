@@ -1,7 +1,7 @@
 const mysql = require('mysql');
 const config = require('./config.js');
 
-const connection = mysql.createConnection(config);
+const connection = mysql.createConnection(process.env.CLEARDB_DATABASE_URL || config);
 
 connection.connect(function(err) {
   if (err) {

@@ -1,8 +1,6 @@
 const statsModel = require('../models/stats.js')
 
 const getPlayerStats = (req, res) => {
-  var cookie = req.cookies;
-  console.log(cookie)
   var personId = req.params.personId;
   statsModel.selectPlayerStats(personId)
     .then(response => {
